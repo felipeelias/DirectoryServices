@@ -1,15 +1,17 @@
 class DataSource
-  attr_accessor :source
-
   def initialize()
     @services = DirectoryServices.registered_hosts
   end
 
-  def numberOfRowsInTableView(tableView)
+  def size
     @services.size
   end
 
-  def tableView(view, objectValueForTableColumn:column, row:index)
+  def [](index)
     @services[index]
+  end
+  
+  def add(host)
+    DirectoryServices.register(host)
   end
 end
