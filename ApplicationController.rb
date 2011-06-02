@@ -3,4 +3,9 @@ class ApplicationController
   
   def add(sender)
   end
+  
+  def awakeFromNib()
+    @registered_hosts = []
+    @directoriesTable.dataSource = DataSource.new
+  end
 end
