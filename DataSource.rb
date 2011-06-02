@@ -4,7 +4,7 @@
 # Created by Felipe Elias Philipp on 02/06/2011.
 # Copyright 2011 __MyCompanyName__. All rights reserved.
 
-class ApplicationController
+class DataSource
 	attr_accessor :source
 	
 	def initialize()
