@@ -1,5 +1,5 @@
 class DirectoryServices
-  def self.list_all
+  def self.registered_hosts
     `/usr/bin/dscl localhost -list /Local/Default/Hosts`.split("\n")
   end
 end

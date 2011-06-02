@@ -2,7 +2,7 @@ class DataSource
   attr_accessor :source
 
   def initialize()
-    @services = DirectoryServices.list_all
+    @services = DirectoryServices.registered_hosts
   end
 
   def numberOfRowsInTableView(tableView)
